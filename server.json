@@ -6,7 +6,7 @@
     "url": "https://github.com/nirajagarwal/stox-mcp",
     "source": "github"
   },
-  "version": "0.1.1",
+  "version": "0.2.0",
   "remotes": [
     {
       "type": "streamable-http",

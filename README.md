@@ -16,11 +16,11 @@ claude mcp add --transport http stox https://mcp.stox.market/mcp
 
 | tool | what it answers |
 |---|---|
-| `fingerprint` | The character of one stock: 16 percentile scores vs the S&P 500 cohort across four panels (Market Beat, Trend Persistence, Business Growth, Pressure), the P4 composite, curated peers, a one-line read. ~550 tokens. |
+| `fingerprint` | The character of one stock: 16 percentile scores vs the S&P 500 cohort across four panels (Market Beat, Trend Persistence, Business Growth, Pressure), the P3 composite, curated peers, a one-line read. ~550 tokens. |
 | `compare` | The 16-score matrix for 2–5 tickers, side by side. |
 | `peers` | TRUE competitive peers — curated from segment overlap, not GICS (Costco → WMT/TGT/KR, not "Discount Stores"). |
 | `theme_cluster` | Who a stock *moves with*: co-movement clusters from price behavior (market-removed residuals → random-matrix cleaning → Ward linkage). |
-| `screen` | Quartile screen over the four headline scores, optionally per sector, sorted by the P4 composite. |
+| `screen` | Quartile screen over the four headline scores, optionally per sector, sorted by the P3 composite. |
 | `market_regime` | Market-stress stance, per-indicator bands, the VIX 5-yr percentile (the one input validated as predicting forward risk), and the S2 stress-confirmation badge. |
 
 ## Design
