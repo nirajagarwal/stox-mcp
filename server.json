@@ -1,0 +1,16 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.nirajagarwal/stox-mcp",
+  "description": "Percentile fingerprints, curated peers, theme clusters & market-stress context for US stocks.",
+  "repository": {
+    "url": "https://github.com/nirajagarwal/stox-mcp",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://stox-mcp.fly.dev/mcp"
+    }
+  ]
+}
