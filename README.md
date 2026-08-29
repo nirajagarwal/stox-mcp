@@ -5,11 +5,11 @@
 finance feed hands a model raw bars and statements, and the model still can't
 answer "is this number good?". This server ships the judgment layer instead.
 
-**Live endpoint:** `https://stox-mcp.fly.dev/mcp` (streamable HTTP) ·
+**Live endpoint:** `https://mcp.stox.market/mcp` (streamable HTTP) ·
 **Demo & docs:** [stox.market/mcp](https://stox.market/mcp)
 
 ```bash
-claude mcp add --transport http stox https://stox-mcp.fly.dev/mcp
+claude mcp add --transport http stox https://mcp.stox.market/mcp
 ```
 
 ## Tools

@@ -6,11 +6,11 @@
     "url": "https://github.com/nirajagarwal/stox-mcp",
     "source": "github"
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://stox-mcp.fly.dev/mcp"
+      "url": "https://mcp.stox.market/mcp"
     }
   ]
 }
