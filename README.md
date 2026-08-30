@@ -20,7 +20,7 @@ claude mcp add --transport http stox https://mcp.stox.market/mcp
 | `compare` | The 16-score matrix for 2–5 tickers, side by side. |
 | `peers` | TRUE competitive peers — curated from segment overlap, not GICS (Costco → WMT/TGT/KR, not "Discount Stores"). |
 | `theme_cluster` | Who a stock *moves with*: co-movement clusters from price behavior (market-removed residuals → random-matrix cleaning → Ward linkage). |
-| `screen` | Quartile screen over the four headline scores, optionally per sector, sorted by the P3 composite. |
+| `screen` | Min/max bounds on any of the 16 metrics — momentum and fallen-leader queries in one call — optionally per sector, sorted by the P3 composite or any single metric. |
 | `market_regime` | Market-stress stance, per-indicator bands, the VIX 5-yr percentile (the one input validated as predicting forward risk), and the S2 stress-confirmation badge. |
 
 ## Design
@@ -34,6 +34,14 @@ claude mcp add --transport http stox https://mcp.stox.market/mcp
 - **Informational only** — descriptive statistics; never investment advice,
   no buy/sell recommendations. Derived metrics only; this is not a
   market-data feed.
+
+## The human-readable twin
+
+The same metric layer renders as editorial leaderboards at
+[stox.market/lists](https://stox.market/lists) — 31 boards plus sector
+slices and frozen earnings-season editions, refreshed on automated weekly
+lanes. A board is where a name catches your eye; `fingerprint` is how your
+agent vets it in one call.
 
 Universe: S&P 500 + NASDAQ-100 + curated ETFs. Coverage and metric
 definitions: [stox.market](https://stox.market).
